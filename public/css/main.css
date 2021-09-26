@@ -1,0 +1,166 @@
+:root {
+    --main: #E71618;
+    --main-80: #eb4446;
+    --main-60: #f07374;
+    --main-50: #f38a8b;
+    --main-40: #f5a1a2;
+    --main-10: #fce7e7;
+    --success: #198754;
+    --success-80: #198754;
+    --success-60: #198754;
+    --success-50: #198754;
+    --success-40: #198754;
+    --success-10: #198754;
+    --warning: #FFC107;
+    --warning-80: #ffcd38;
+    --warning-60: #ffd96a;
+    --warning-50: #ffe083;
+    --warning-40: #ffe69b;
+    --warning-10: #fff8e6;
+    --error: #DC3545;
+    --error-80: #e35d6a;
+    --error-60: #ea858f;
+    --error-50: #ed9aa2;
+    --error-40: #f1aeb4;
+    --error-10: #fbeaec;
+    --white-light: #FCFCFE;
+    --white-background: #F5F3F6;
+    --white: #ffffff;
+    --black: #0f0f0f;
+    --black-80: #3e3e3e;
+    --black-60: #6f6f6f;
+    --black-50: #878787;
+    --black-40: #9f9f9f;
+    --black-10: #e7e7e7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* utilities & bootstrap */
+
+.btn-main {
+    color: var(--main);
+}
+
+.btn-main {
+    color: white;
+    background-color: var(--main);
+    border-color: var(--main);
+}
+
+.btn-main:hover {
+    color: white;
+    background-color: var(--main);
+    border-color: var(--main);
+}
+
+/* navbar  */
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin: 0 5px;
+}
+
+.nav-active {
+    color: var(--main) !important;
+    font-weight: 500;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--black-80);
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--main) !important;
+}
+
+.dropmenu a {
+    width: 200px;
+}
+
+.dropdown-item {
+    font-weight: 400;
+}
+
+.dropdown-item:hover {
+    color: var(--main);
+}
+
+/* main */
+
+body {
+    background-color: var(--white-background);
+}
+
+.header i {
+    display: none;
+}
+
+/* Dashboard Page */
+.dashboard-title {
+    margin: 75px 0 0px;
+    font-size: 48px;
+}
+
+/* Pekerjaan Lapangan Index.blade */
+.dropleft span {
+    cursor: pointer;
+}
+
+.header-tabel {
+    font-size: 36px;
+}
+
+/* Error Page */
+.error-heading {
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.error-404 {
+    font-weight: 700;
+    font-size: 200px;
+    margin: 20px;
+    color: var(--error);
+}
+
+.error-body a {
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+/* RESPONSIVE */
+
+/* Handphone */
+@media (max-width: 575.98px) {
+
+    .main-content {
+        margin: 5px;
+    }
+
+    /* sidebar */
+    .dropdown-menu {
+        width: max-content;
+    }
+
+    .navbar-nav {
+        margin: 10px 0 5px 0;
+    }
+
+}
+
+/* Tablet */
+@media (min-width: 576px) {}
